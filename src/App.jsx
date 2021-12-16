@@ -2,6 +2,14 @@ import { useState } from 'react'
 import logo from './logo.svg'
 import './App.css'
 
+import GoodWorker1 from './workers/good-worker-1?worker'
+import GoodWorker2 from './workers/good-worker-2?worker'
+import BadWorker from './workers/bad-worker?worker'
+
+const badWorker = new BadWorker() // Commenting this line will stop the error
+const goodWorker1 = new GoodWorker1()
+const goodWorker2 = new GoodWorker2()
+
 function App() {
   const [count, setCount] = useState(0)
 
